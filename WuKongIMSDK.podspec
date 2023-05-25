@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   s.ios.libraries = ['c++','sqlite3','z']
   s.source = { :git => "https://github.com/WuKongIM/WuKongIMiOSSDK-Framework.git",:tag => "#{s.version}" }
   s.requires_arc = true
-  s.ios.deployment_target    = '12.0'
-  s.platform     = :ios, '12.0'
+  s.ios.deployment_target    = '11.0'
+  s.platform     = :ios, '11.0'
   s.resource             = 'ios/WuKongIMSDK.framework/WuKongIMSDK.bundle'
    s.vendored_frameworks  = 'ios/WuKongIMSDK.framework'
   s.xcconfig = {
@@ -22,6 +22,6 @@ Pod::Spec.new do |s|
     
   }
   s.dependency 'CocoaAsyncSocket', '~> 7.6.4'
-   s.dependency 'FMDB/SQLCipher', '~>2.7.5'
-   s.dependency '25519', '~>2.0.2'
+  s.dependency 'FMDB/SQLCipher', '~>2.7.5'
+  s.dependency '25519', '~>2.0.2'
 end
