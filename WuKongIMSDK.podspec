@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.frameworks = ["UIKit", "MapKit","AVFoundation"]
   # s.libraries = ["opencore-amrnb", "opencore-amrwb", "vo-amrwbenc"]
   s.ios.libraries = ['c++','sqlite3','z']
-  s.source = { :git => "https://gitee.com/WuKongIM/WuKongIMiOSSDK-Framework.git",:tag => "#{s.version}" }
+  s.source = { :git => "https://github.com/WuKongIM/WuKongIMiOSSDK-Framework.git",:tag => "#{s.version}" }
   s.requires_arc = true
   s.ios.deployment_target    = '12.0'
   s.platform     = :ios, '12.0'
