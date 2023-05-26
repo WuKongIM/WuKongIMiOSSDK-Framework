@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'WuKongIMSDK'
-  s.version = '1.0.0'
+  s.version = '1.0.1'
   s.summary = '悟空IM是一款简单，高效，支持完全私有化的即时通讯.'
   s.license = {"type"=>"MIT", "file"=>"ios/LICENSE"}
   s.authors = {"tangtaoit"=>"tt@tgo.ai"}
