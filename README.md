@@ -5,4 +5,4 @@ https://githubim.com
 
 pod spec lint --verbose --allow-warnings
 
-pod trunk push LiMaoIMSDK.podspec --allow-warnings
+pod trunk push WuKongIMSDK.podspec --allow-warnings
