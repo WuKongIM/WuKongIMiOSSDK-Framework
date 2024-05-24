@@ -101,6 +101,13 @@ typedef BOOL(^MessageStoreBeforeIntercept)(WKMessage*message);
 /// 保存消息
 -(void) saveMessages:(NSArray<WKMessage*>*)messages;
 
+
+// 添加或更新消息（如果存在则更新，不存在添加）
+- (void) addOrUpdateMessages:(NSArray<WKMessage*>*)messages;
+
+// 添加或更新消息（如果存在则更新，不存在添加）
+// notify 是否通知ui
+-(void) addOrUpdateMessages:(NSArray<WKMessage*>*)messages notify:(BOOL)notify;
 /**
  转发消息
 
@@ -344,6 +351,9 @@ typedef BOOL(^MessageStoreBeforeIntercept)(WKMessage*message);
 // 消息编辑提供者
 @property(nonatomic,copy) WKMessageEditProvider messageEditProvider;
 
+// 调用消息更新委托
+- (void)callMessageUpdateDelegate:(WKMessage*)message left:(NSInteger)left total:(NSInteger)total;
+
 @end
 
 /**
@@ -405,6 +415,8 @@ typedef BOOL(^MessageStoreBeforeIntercept)(WKMessage*message);
 
 // 流消息
 -(void) onMessageStream:(WKStream*)stream;
+
+
 
 @end
 
