@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'WuKongIMSDK'
-  s.version = '1.0.8'
+  s.version = '1.0.9'
   s.summary = '悟空IM是一款简单，高效，支持完全私有化的即时通讯.'
   s.license = {"type"=>"MIT", "file"=>"ios/LICENSE"}
   s.authors = {"tangtaoit"=>"tt@tgo.ai"}
@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   s.ios.libraries = ['c++','sqlite3','z']
   s.source = { :git => "https://github.com/WuKongIM/WuKongIMiOSSDK-Framework.git",:tag => "#{s.version}" }
   s.requires_arc = true
-  s.ios.deployment_target    = '13.0'
-  s.platform     = :ios, '13.0'
+  s.ios.deployment_target    = '11.0'
+  s.platform     = :ios, '11.0'
   s.resource             = 'ios/WuKongIMSDK.framework/WuKongIMSDK.bundle'
    s.vendored_frameworks  = 'ios/WuKongIMSDK.framework'
   s.xcconfig = {
